@@ -170,6 +170,7 @@ class PDFLayoutAnalyzer(PDFTextDevice):
         textdisp = font.char_disp(cid)
         item = LTChar(matrix, font, fontsize, scaling, rise, text, textwidth,
                       textdisp, ncs, graphicstate)
+        print(item)
         self.cur_item.add(item)
         return item.adv
 
